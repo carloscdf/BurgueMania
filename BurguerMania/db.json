@@ -1,0 +1,51 @@
+{
+  "Categories": [
+    {
+      "id": 1,
+      "nome": "X-Vegan",
+      "desc": "Hambúrgueres veganos",
+      "img": "assets/burguers/burguer4.png"
+    },
+    {
+      "id": 2,
+      "nome": "X-Fitnnes",
+      "desc": "Hambúrgueres fitness",
+      "img": "assets/burguers/burguer5.png"
+    },
+    {
+      "id": 3,
+      "nome": "X-Infarto",
+      "desc": "Os maiores e mais suculentos hambúrgueres",
+      "img": "assets/burguers/burguer1.png"
+    },
+    {
+      "id": 4,
+      "nome": "X-Mais",
+      "desc": "O mais mais",
+      "img": "assets/burguers/burguer2.png"
+    }
+  ],
+  "Burguers": [
+    {
+      "id": 1,
+      "nome": "X-Alface-Premium",
+      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
+      "categoria": "Vegan",
+      "img": "assets/burguers/burguer4.png"
+    },
+    {
+      "id": 2,
+      "nome": "X-Tomate",
+      "dec": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
+      "categoria": "Vegan",
+      "img": "assets/burguers/burguer4.png"
+    },
+    {
+      "id": 3,
+      "nome": "X-Frutas",
+      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
+      "categoria": "Vegan",
+      "img": "assets/burguers/burguer4.png"
+    }
+  ]
+}

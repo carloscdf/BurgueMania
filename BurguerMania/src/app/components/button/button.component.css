@@ -1,0 +1,34 @@
+.buttons{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    width: 350px;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.buttons > a {
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 25px 10px 25px;
+    outline: var(--buttonBorder);
+    text-decoration: none;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+.buttonColored {
+    text-align: center;
+    width: 100%;
+    background-color: var(--secondColor);
+    color: var(--whiteColor) !important;
+    transition: 0.2s;
+}
+
+.buttonColored:hover{
+    opacity: 90%;
+    transition: 0.2s;  
+}

@@ -1,0 +1,33 @@
+header{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.logo > img{
+    width: 200px;
+}
+
+
+.categories{
+    width: 500px;
+}
+
+.categories > ul{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: var(--font);
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories > ul > li > a{
+    text-decoration: none;
+    color: var(--mainColor);
+}

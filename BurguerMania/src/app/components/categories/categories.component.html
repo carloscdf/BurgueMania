@@ -1,0 +1,12 @@
+<div class="title">
+    <h1>Categorias</h1>
+</div>
+<div class="categories">
+      @for(categorie of showAll === false ? categoriesList.slice(0, 3) : categoriesList; track categorie.id;){
+        <div class="categorie">
+            <img [src]="categorie.img" alt="">
+            <p id="title">{{categorie.nome}}</p>
+            <p id="desc">{{categorie.desc}}</p>
+        </div>
+      } 
+</div>
