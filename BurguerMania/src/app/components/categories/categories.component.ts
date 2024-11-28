@@ -17,9 +17,9 @@ export class CategoriesComponent {
 
 
   constructor(){
-    // chamando o método para buscar os álbuns do serviço
+    // chamando o método para buscar as categorias do serviço
     this.categoriesService.getAllCategories().then((categrorie=>{
-     this.categoriesList = categrorie;  // atribuindo os álbuns retornados à lista
+     this.categoriesList = categrorie;  // atribuindo as categorias retornadas à lista
    }))
  }
 

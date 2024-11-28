@@ -1,0 +1,67 @@
+.title{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title > h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--font);
+    color: var(--secondColor);
+    text-transform: uppercase !important;
+}
+
+.menu{
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 294px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item:hover{
+    outline: var(--cardBorder);
+}
+
+.item > img{
+    display: flex;
+    width: 293.33px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#title {
+    color: var(--mainColor);
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font);
+}
+
+
+#desc {
+
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+
+    font-family: var(--font);
+}

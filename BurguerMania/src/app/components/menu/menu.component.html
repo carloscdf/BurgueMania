@@ -1,0 +1,12 @@
+<div class="title">
+    <h1>Cardápio -  Todos os ítens</h1>
+</div>
+<div class="menu">
+      @for(burguer of showAll === false ? burguersList.slice(0, 3) : burguersList; track burguer.id;){
+        <div class="item">
+            <img [src]="burguer.img" alt="">
+            <p id="title">{{burguer.nome}}</p>
+            <p id="desc">{{burguer.desc}}</p>
+        </div>
+      } 
+</div>

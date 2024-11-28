@@ -35,17 +35,24 @@
     },
     {
       "id": 2,
-      "nome": "X-Tomate",
-      "dec": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "categoria": "Vegan",
-      "img": "assets/burguers/burguer4.png"
+      "nome": "X-Obeso",
+      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
+      "categoria": "Infarto",
+      "img": "assets/burguers/burguer1.png"
     },
     {
       "id": 3,
-      "nome": "X-Frutas",
+      "nome": "X-Minimalista",
       "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "categoria": "Vegan",
-      "img": "assets/burguers/burguer4.png"
+      "categoria": "Fitness",
+      "img": "assets/burguers/burguer2.png"
+    },
+    {
+      "id": 4,
+      "nome": "X-Todos",
+      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
+      "categoria": "Infarto",
+      "img": "assets/burguers/burguer3.png"
     }
   ]
 }
