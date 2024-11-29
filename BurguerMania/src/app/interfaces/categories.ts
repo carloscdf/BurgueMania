@@ -3,4 +3,5 @@ export interface Categories {
     nome: string;
     desc: string;
     img: string;
+    tipo: string;
 }

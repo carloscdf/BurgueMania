@@ -4,25 +4,29 @@
       "id": 1,
       "nome": "X-Vegan",
       "desc": "Hambúrgueres veganos",
-      "img": "assets/burguers/burguer4.png"
+      "img": "assets/burguers/burguer4.png",
+      "tipo": "Vegan"
     },
     {
       "id": 2,
       "nome": "X-Fitnnes",
       "desc": "Hambúrgueres fitness",
-      "img": "assets/burguers/burguer5.png"
+      "img": "assets/burguers/burguer5.png",
+      "tipo": "Fitness"
     },
     {
       "id": 3,
       "nome": "X-Infarto",
       "desc": "Os maiores e mais suculentos hambúrgueres",
-      "img": "assets/burguers/burguer1.png"
+      "img": "assets/burguers/burguer1.png",
+      "tipo": "Infarto"
     },
     {
       "id": 4,
       "nome": "X-Mais",
       "desc": "O mais mais",
-      "img": "assets/burguers/burguer2.png"
+      "img": "assets/burguers/burguer2.png",
+      "tipo": "Mais"
     }
   ],
   "Burguers": [
@@ -30,28 +34,36 @@
       "id": 1,
       "nome": "X-Alface-Premium",
       "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "categoria": "Vegan",
+      "sobre": "",
+      "preco": "",
+      "tipo": "Vegan",
       "img": "assets/burguers/burguer4.png"
     },
     {
       "id": 2,
       "nome": "X-Obeso",
       "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "categoria": "Infarto",
+      "sobre": "",
+      "preco": "",
+      "tipo": "Infarto",
       "img": "assets/burguers/burguer1.png"
     },
     {
       "id": 3,
       "nome": "X-Minimalista",
       "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "categoria": "Fitness",
+      "sobre": "",
+      "preco": "",
+      "tipo": "Fitness",
       "img": "assets/burguers/burguer2.png"
     },
     {
       "id": 4,
       "nome": "X-Todos",
       "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "categoria": "Infarto",
+      "sobre": "",
+      "preco": "",
+      "tipo": "Infarto",
       "img": "assets/burguers/burguer3.png"
     }
   ]

@@ -27,6 +27,7 @@
 }
 
 .categorie{
+    text-decoration: none;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -58,10 +59,9 @@
 
 
 #desc {
-
     text-align: center;
     width: 100%;
     font-size: 16px;
-
+    color: var(--blackColor);
     font-family: var(--font);
 }

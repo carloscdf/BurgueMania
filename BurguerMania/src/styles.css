@@ -3,6 +3,7 @@
     --mainColor: #521d16ff;
     --secondColor: #ed0000ff;
     --whiteColor: #ffffff;
+    --blackColor: #000000;
     --buttonBorder: 2px solid var(--secondColor);
     --cardBorder: 3px solid var(--secondColor);
 }

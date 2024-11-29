@@ -4,23 +4,26 @@ import { MenuComponent } from '../../components/menu/menu.component';
 import { ButtonComponent } from '../../components/button/button.component';
 import { BurguersService } from '../../services/burguers.service';
 import { Burguer } from '../../interfaces/burguer';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-menu-itens',
+  selector: 'app-burguer-type',
   standalone: true,
   imports: [MenuComponent, ButtonComponent],
-  templateUrl: './menu-itens.component.html',
-  styleUrl: './menu-itens.component.css'
+  templateUrl: './burguer-type.component.html',
+  styleUrl: './burguer-type.component.css'
 })
-export class MenuItensComponent {
+export class BurguerTypeComponent {
   showAll = false;
-  burguersList!:Burguer[];
+  route:ActivatedRoute = inject(ActivatedRoute);
+  burguersList:Burguer[] = [];
   burguersService: BurguersService =  inject(BurguersService);
 
 
   constructor(){
+    const tipo = String(this.route.snapshot.params['tipo']);
     // chamando o método para buscar os haburguers do serviço
-    this.burguersService.getAllBurguers().then((burguer=>{
+    this.burguersService.getBurguersByType(tipo).then((burguer=>{
      this.burguersList = burguer;  // atribuindo os hamburguers retornadas à lista
    }))
  }
