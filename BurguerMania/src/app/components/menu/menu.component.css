@@ -42,6 +42,7 @@
 .item > img{
     display: flex;
     width: 293.33px;
+    height: 200px;
     object-fit: cover;
     object-position: center;
 }
@@ -58,10 +59,9 @@
 
 
 #desc {
-
+    color: var(--greyColor);
     text-align: center;
     width: 100%;
     font-size: 16px;
-
     font-family: var(--font);
 }

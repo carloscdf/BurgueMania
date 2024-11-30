@@ -2,69 +2,187 @@
   "Categories": [
     {
       "id": 1,
-      "nome": "X-Vegan",
+      "nome": "Vegan",
       "desc": "Hambúrgueres veganos",
       "img": "assets/burguers/burguer4.png",
       "tipo": "Vegan"
     },
     {
       "id": 2,
-      "nome": "X-Fitnnes",
+      "nome": "Fitnnes",
       "desc": "Hambúrgueres fitness",
       "img": "assets/burguers/burguer5.png",
       "tipo": "Fitness"
     },
     {
       "id": 3,
-      "nome": "X-Infarto",
+      "nome": "Infarto",
       "desc": "Os maiores e mais suculentos hambúrgueres",
       "img": "assets/burguers/burguer1.png",
       "tipo": "Infarto"
     },
     {
       "id": 4,
-      "nome": "X-Mais",
-      "desc": "O mais mais",
+      "nome": "Maiorais",
+      "desc": "O gigantescos e os suculentos",
       "img": "assets/burguers/burguer2.png",
-      "tipo": "Mais"
+      "tipo": "Maiorais"
     }
   ],
   "Burguers": [
-    {
-      "id": 1,
-      "nome": "X-Alface-Premium",
-      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "sobre": "",
-      "preco": "",
-      "tipo": "Vegan",
-      "img": "assets/burguers/burguer4.png"
-    },
-    {
-      "id": 2,
-      "nome": "X-Obeso",
-      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "sobre": "",
-      "preco": "",
-      "tipo": "Infarto",
-      "img": "assets/burguers/burguer1.png"
-    },
-    {
-      "id": 3,
-      "nome": "X-Minimalista",
-      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "sobre": "",
-      "preco": "",
-      "tipo": "Fitness",
-      "img": "assets/burguers/burguer2.png"
-    },
-    {
-      "id": 4,
-      "nome": "X-Todos",
-      "desc": "Pão, Hambúrguer, alface, tomate, queijo e maionese",
-      "sobre": "",
-      "preco": "",
-      "tipo": "Infarto",
-      "img": "assets/burguers/burguer3.png"
-    }
-  ]
+  {
+    "id": 5,
+    "nome": "X-Avocado",
+    "desc": "Pão integral, hambúrguer de grão-de-bico, alface, tomate, queijo vegano e avocado",
+    "sobre": "Opção saudável e vegana.",
+    "preco": "12.99",
+    "tipo": "Vegan",
+    "img": "assets/burguers/burguer1.png"
+  },
+  {
+    "id": 6,
+    "nome": "X-Baconator",
+    "desc": "Pão brioche, hambúrguer duplo, bacon crocante, queijo cheddar e molho especial",
+    "sobre": "Para os amantes de bacon.",
+    "preco": "18.99",
+    "tipo": "Infarto",
+    "img": "assets/burguers/burguer2.png"
+  },
+  {
+    "id": 7,
+    "nome": "X-Verde",
+    "desc": "Pão integral, hambúrguer de espinafre, rúcula, tomate seco e molho pesto",
+    "sobre": "Sabor fresco e saudável.",
+    "preco": "14.99",
+    "tipo": "Vegan",
+    "img": "assets/burguers/burguer3.png"
+  },
+  {
+    "id": 8,
+    "nome": "X-Coração Atacado",
+    "desc": "Pão brioche, hambúrguer triplo, queijo cheddar, bacon e maionese trufada",
+    "sobre": "Um verdadeiro desafio para os famintos.",
+    "preco": "21.99",
+    "tipo": "Infarto",
+    "img": "assets/burguers/burguer4.png"
+  },
+  {
+    "id": 9,
+    "nome": "X-Semente",
+    "desc": "Pão com sementes, hambúrguer de quinoa, alface, tomate, cenoura ralada e molho tahine",
+    "sobre": "Repleto de nutrientes.",
+    "preco": "13.99",
+    "tipo": "Vegan",
+    "img": "assets/burguers/burguer5.png"
+  },
+  {
+    "id": 10,
+    "nome": "X-Protein Boost",
+    "desc": "Pão low carb, hambúrguer de frango grelhado, espinafre, queijo cottage e molho de iogurte",
+    "sobre": "Para quem busca proteínas.",
+    "preco": "15.99",
+    "tipo": "Fitness",
+    "img": "assets/burguers/burguer1.png"
+  },
+  {
+    "id": 11,
+    "nome": "X-Explosão",
+    "desc": "Pão tradicional, hambúrguer duplo, bacon, queijo cheddar, cebola caramelizada e molho barbecue",
+    "sobre": "Uma explosão de sabores.",
+    "preco": "19.99",
+    "tipo": "Infarto",
+    "img": "assets/burguers/burguer2.png"
+  },
+  {
+    "id": 12,
+    "nome": "X-Light",
+    "desc": "Pão integral, hambúrguer de frango grelhado, alface americana, tomate e molho de limão",
+    "sobre": "Simples e saudável.",
+    "preco": "12.49",
+    "tipo": "Fitness",
+    "img": "assets/burguers/burguer3.png"
+  },
+  {
+    "id": 13,
+    "nome": "X-Gourmet Vegan",
+    "desc": "Pão artesanal, hambúrguer de lentilha, queijo vegano, rúcula e molho de ervas",
+    "sobre": "Delícia vegana sofisticada.",
+    "preco": "16.99",
+    "tipo": "Vegan",
+    "img": "assets/burguers/burguer4.png"
+  },
+  {
+    "id": 14,
+    "nome": "X-Crossfit",
+    "desc": "Pão integral, hambúrguer de carne magra, queijo de búfala, espinafre e ovo poché",
+    "sobre": "Para quem treina pesado.",
+    "preco": "17.49",
+    "tipo": "Fitness",
+    "img": "assets/burguers/burguer5.png"
+  },
+  {
+    "id": 15,
+    "nome": "X-Crosses",
+    "desc": "Pão integral, hambúrguer de carne magra, queijo de búfala, espinafre e ovo poché",
+    "sobre": "Para quem treina pesado.",
+    "preco": "20.49",
+    "tipo": "Fitness",
+    "img": "assets/burguers/burguer2.png"
+  },
+  {
+    "id": 16,
+    "nome": "X-Biggao",
+    "desc": "Pão integral, hambúrguer de carne magra, queijo de búfala, espinafre e ovo poché",
+    "sobre": "Para quem treina pesado.",
+    "preco": "27.49",
+    "tipo": "Infarto",
+    "img": "assets/burguers/burguer1.png"
+  },
+  {
+    "id": 17,
+    "nome": "X-Verdinha",
+    "desc": "Pão integral, hambúrguer de carne magra, queijo de búfala, espinafre e ovo poché",
+    "sobre": "Para quem treina pesado.",
+    "preco": "17.49",
+    "tipo": "Vegan",
+    "img": "assets/burguers/burguer5.png"
+  },
+  {
+    "id": 18,
+    "nome": "X-Supremo",
+    "desc": "Pão australiano, hambúrguer artesanal, queijo gouda, cebola roxa caramelizada, cogumelos grelhados e molho de mostarda Dijon",
+    "sobre": "Uma experiência gastronômica incomparável.",
+    "preco": "22.99",
+    "tipo": "Maiorais",
+    "img": "assets/burguers/burguer1.png"
+  },
+  {
+    "id": 19,
+    "nome": "X-Trufado",
+    "desc": "Pão brioche, hambúrguer de costela, queijo brie, rúcula e maionese trufada",
+    "sobre": "Luxo e sabor em cada mordida.",
+    "preco": "25.99",
+    "tipo": "Maiorais",
+    "img": "assets/burguers/burguer2.png"
+  },
+  {
+    "id": 20,
+    "nome": "X-Deluxe",
+    "desc": "Pão ciabatta, hambúrguer de picanha, queijo gruyère, presunto Parma e molho especial",
+    "sobre": "Um hambúrguer digno de reis.",
+    "preco": "24.99",
+    "tipo": "Maiorais",
+    "img": "assets/burguers/burguer3.png"
+  },
+  {
+    "id": 21,
+    "nome": "X-Extravagante",
+    "desc": "Pão de alho, hambúrguer duplo, queijo provolone, bacon crocante, onion rings e molho barbecue",
+    "sobre": "Porque mais é mais.",
+    "preco": "26.99",
+    "tipo": "Maiorais",
+    "img": "assets/burguers/burguer4.png"
+  }
+  
+]
 }
