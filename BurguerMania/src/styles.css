@@ -6,6 +6,7 @@
     --greyColor: #0f0f0f;
     --buttonBorder: 2px solid var(--secondColor);
     --cardBorder: 3px solid var(--secondColor);
+    --descBorder: 2px solid var(--secondColor);
 }
 
 *{

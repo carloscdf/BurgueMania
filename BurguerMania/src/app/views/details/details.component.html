@@ -1,1 +1,10 @@
-<app-item-detail></app-item-detail>
+<app-title [title]="title"></app-title>
+@if(burguer!==undefined){
+<section class="details">
+    <app-item-detail [burguer]="burguer"></app-item-detail>
+    <app-description [description]="burguer.sobre"></app-description>
+</section>
+<app-buy-button></app-buy-button>
+} @else {
+    <p id="alert">Produto não encontrado</p>
+}

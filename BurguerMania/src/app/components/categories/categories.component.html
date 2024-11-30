@@ -1,6 +1,6 @@
 <div class="categories">
       @for(categorie of showAll === false ? categoriesList.slice(0, 3) : categoriesList; track categorie.id;){
-        <a [routerLink]="['/burguer-types', categorie.tipo]" class="categorie">
+        <a [routerLink]="['/burguer-type', categorie.tipo]" class="categorie">
             <img [src]="categorie.img" alt="">
             <p id="title">{{categorie.nome}}</p>
             <p id="desc">{{categorie.desc}}</p>

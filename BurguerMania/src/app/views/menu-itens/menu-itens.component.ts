@@ -13,6 +13,7 @@ import { TitleComponent } from '../../components/title/title.component';
   templateUrl: './menu-itens.component.html',
   styleUrl: './menu-itens.component.css'
 })
+
 export class MenuItensComponent {
   title:string = "Cardápio - todos os itens";
   showAll = false;

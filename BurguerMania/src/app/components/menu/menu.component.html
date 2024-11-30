@@ -1,9 +1,9 @@
 <div class="menu">
       @for(burguer of showAll === false ? burguersList.slice(0, 3) : burguersList; track burguer.id;){
-        <div class="item">
+        <a [routerLink]="['/details', burguer.id]" class="item">
             <img [src]="burguer.img" alt="">
             <p id="title">{{burguer.nome}}</p>
             <p id="desc">{{burguer.desc}}</p>
-        </div>
+        </a> 
       } 
 </div>
