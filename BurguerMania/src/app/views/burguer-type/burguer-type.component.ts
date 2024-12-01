@@ -24,7 +24,7 @@ export class BurguerTypeComponent {
 
   constructor(){
     const tipo = String(this.route.snapshot.params['tipo']);
-    this.title = String(this.route.snapshot.params['tipo']);
+    this.title = "Hamburguers " + String(this.route.snapshot.params['tipo']);
     // chamando o método para buscar os haburguers do serviço
     this.burguersService.getBurguersByType(tipo).then((burguer=>{
      this.burguersList = burguer;  // atribuindo os hamburguers retornadas à lista

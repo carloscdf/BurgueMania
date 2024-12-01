@@ -32,8 +32,9 @@
 }
 
 #title {
+    text-transform: capitalize;
     color: var(--mainColor);
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 5px 0px;
     text-align: center;
     width: 100%;
     font-size: 20px;
@@ -47,5 +48,26 @@
     text-align: center;
     width: 100%;
     font-size: 16px;
+    font-family: var(--font);
+}
+
+#tipo{
+    text-transform: capitalize;
+    color: var(--secondColor);
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font);
+}
+
+
+#price{
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: var(--secondColor);
+    font-size: 20px;
+    font-weight: 600;
     font-family: var(--font);
 }

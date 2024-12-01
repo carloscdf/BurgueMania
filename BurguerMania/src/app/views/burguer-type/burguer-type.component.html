@@ -1,3 +1,9 @@
 <app-title [title]="title"></app-title>
-<app-menu [showAll]="showAll" [burguersList]="burguersList"></app-menu>
-<app-button [showAll]="showAll" (click)="toggleShowAll()"></app-button>
+@if(burguersList !== undefined && burguersList.length > 0){
+    <app-menu [showAll]="showAll" [burguersList]="burguersList"></app-menu>
+    <app-button [showAll]="showAll" (click)="toggleShowAll()"></app-button>    
+} @else {
+    <p id="alert">Produtos não encontrados</p>
+}
+
+

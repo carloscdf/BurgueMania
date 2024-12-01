@@ -7,17 +7,19 @@ import { BuyButtonComponent } from '../../components/buy-button/buy-button.compo
 import { Burguer } from '../../interfaces/burguer';
 import { BurguersService } from '../../services/burguers.service';
 import { ActivatedRoute } from '@angular/router';
+import { PopupBuyComponent } from '../../components/popup-buy/popup-buy.component';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [ItemDetailComponent, TitleComponent, DescriptionComponent, BuyButtonComponent],
+  imports: [ItemDetailComponent, TitleComponent, DescriptionComponent, BuyButtonComponent, PopupBuyComponent],
   templateUrl: './details.component.html',
   styleUrl: './details.component.css'
 })
 
 export class DetailsComponent {
   title:string = "Detalhes";
+  popupVisibility:string = 'none';
   route: ActivatedRoute = inject(ActivatedRoute);
   burguer!:Burguer;
   burguerService: BurguersService = inject(BurguersService);
@@ -30,6 +32,18 @@ export class DetailsComponent {
             this.burguer = burguer;
           }
         });
+  }
+
+  isPopupVisible():void{
+    if(this.popupVisibility === 'none'){
+      this.popupVisibility = 'flex';
+    } else{
+      this.popupVisibility = 'none';
+    }
+  }
+
+  onPopupVisibilityChange(newVisibility:string):void{
+    this.popupVisibility = newVisibility;
   }
 
   

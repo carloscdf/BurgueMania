@@ -1,9 +1,5 @@
 .button{
-    margin: 0 auto;
-    margin-bottom: 40px;
     display: flex;
-    width: 350px;
-    height: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -11,9 +7,9 @@
 
 .button > a {
     font-family: var(--font);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 10px 25px 10px 25px;
+    padding: 13px 25px 13px 25px;
     outline: var(--buttonBorder);
     text-decoration: none;
     color: var(--mainColor);
@@ -31,4 +27,8 @@
 .buttonColored:hover{
     opacity: 90%;
     transition: 0.2s;  
+}
+
+#price{
+    margin-left: 10px;
 }

@@ -1,0 +1,5 @@
+<div class="stepper">
+    <button class="remove" (click)="diminuirQuantidade()" [disabled]="quantity < 2" [style.color]="quantity < 2 ? 'var(--lightGreyColor)' : 'var(--secondColor)'">-</button>
+    <span class="value">{{quantity}}</span>
+    <button class="add" (click)="aumentarQuantidade()">+</button>
+</div>

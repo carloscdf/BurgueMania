@@ -11,6 +11,6 @@ export const routes: Routes = [
     {path: 'categories', component: CategoriesPageComponent, title: 'Categorias'},
     {path: 'menu', component: MenuItensComponent, title: 'Cardápio'},
     {path: 'location', component: LocationContactComponent, title: 'Localização e Contato'},
-    {path: 'burguer-type/:tipo', component: BurguerTypeComponent, title: 'Tipos de Hambúrguer'},
-    {path: 'details/:id', component: DetailsComponent, title: 'Detalhes do produto'}
+    {path: 'categories/:tipo', component: BurguerTypeComponent, title: 'Tipos de Hambúrguer'},
+    {path: 'categories/:tipo/:id', component: DetailsComponent, title: 'Detalhes do pedido'}
 ];

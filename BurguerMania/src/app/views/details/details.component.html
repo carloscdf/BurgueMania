@@ -1,10 +1,14 @@
-<app-title [title]="title"></app-title>
+
 @if(burguer!==undefined){
+
+<app-title [title]="title"></app-title>
 <section class="details">
     <app-item-detail [burguer]="burguer"></app-item-detail>
     <app-description [description]="burguer.sobre"></app-description>
 </section>
-<app-buy-button></app-buy-button>
+<app-buy-button (click)="isPopupVisible()"></app-buy-button>
+<app-popup-buy [burguer]="burguer" [popupVisibility]="popupVisibility" (popupVisibilityChange)="onPopupVisibilityChange($event)"></app-popup-buy>    
+
 } @else {
     <p id="alert">Produto não encontrado</p>
 }

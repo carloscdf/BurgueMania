@@ -1,0 +1,6 @@
+#alert{
+    font-family: var(--font);
+    text-align: center;
+    font-size: 18px;
+    color: var(--mainColor);
+}

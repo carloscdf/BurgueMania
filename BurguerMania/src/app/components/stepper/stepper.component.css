@@ -1,0 +1,26 @@
+.stepper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    padding: 10px;
+    border: var(--greyBorder);
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    color: var(--secondColor);
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.value{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: var(--font);
+    color: var(--mainColor);
+}

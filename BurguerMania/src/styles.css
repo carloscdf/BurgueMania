@@ -4,9 +4,12 @@
     --secondColor: #ed0000ff;
     --whiteColor: #ffffff;
     --greyColor: #0f0f0f;
+    --lightGreyColor: #c0c0c0;
+    --overlayColor:  rgba(12, 12, 12, 0.63);
     --buttonBorder: 2px solid var(--secondColor);
     --cardBorder: 3px solid var(--secondColor);
     --descBorder: 2px solid var(--secondColor);
+    --greyBorder: 1px solid var(--lightGreyColor);
 }
 
 *{

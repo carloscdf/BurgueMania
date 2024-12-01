@@ -1,8 +1,7 @@
-@if(burguer !== undefined){
 <div class="item">
         <img [src]="burguer.img" [alt]="burguer.nome">
+        <p id="tipo">{{burguer.tipo}}</p>
         <p id="title">{{burguer.nome}}</p>
         <p id="desc">{{burguer.desc}}</p>
-        <p id="preco">{{burguer.preco}}</p>
+        <p id="preco">{{burguer.preco | currency: 'BRL':'symbol'}}</p>
 </div>
-}
