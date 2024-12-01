@@ -14,3 +14,42 @@
     font-size: 18px;
     color: var(--mainColor);
 }
+
+/*Media queries*/
+@media (max-width: 1020px) {
+    .details{
+        width: 90%;
+    }
+}
+
+@media (max-width: 830px) {
+
+    app-item-detail, app-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .details{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 630px){
+
+}
+
+@media(max-width: 440px){
+
+}
+
+@media(max-width: 390px){
+
+}
+
+@media (max-width: 340px){
+   
+}
