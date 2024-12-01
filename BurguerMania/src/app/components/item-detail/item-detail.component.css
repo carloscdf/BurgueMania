@@ -35,8 +35,8 @@
     font-family: var(--font);
 }
 
-#preco{
-    color: var(--mainColor);
+#price{
+    color: var(--secondColor);
     margin: 10px 0px 10px 0px;
     text-align: center;
     width: 100%;

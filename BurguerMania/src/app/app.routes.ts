@@ -5,6 +5,8 @@ import { MenuItensComponent } from './views/menu-itens/menu-itens.component';
 import { LocationContactComponent } from './views/location-contact/location-contact.component';
 import { DetailsComponent } from './views/details/details.component';
 import { BurguerTypeComponent } from './views/burguer-type/burguer-type.component';
+import { PedidosComponent } from './views/pedidos/pedidos.component';
+import { CestaComponent } from './views/cesta/cesta.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent, title: 'Página inicial'},
@@ -12,5 +14,7 @@ export const routes: Routes = [
     {path: 'menu', component: MenuItensComponent, title: 'Cardápio'},
     {path: 'location', component: LocationContactComponent, title: 'Localização e Contato'},
     {path: 'categories/:tipo', component: BurguerTypeComponent, title: 'Tipos de Hambúrguer'},
-    {path: 'categories/:tipo/:id', component: DetailsComponent, title: 'Detalhes do pedido'}
+    {path: 'categories/:tipo/:id', component: DetailsComponent, title: 'Detalhes do pedido'},
+    {path: 'pedidos', component: PedidosComponent, title: 'Pedidos'},
+    {path: 'cesta', component: CestaComponent, title: 'Cesta'}
 ];

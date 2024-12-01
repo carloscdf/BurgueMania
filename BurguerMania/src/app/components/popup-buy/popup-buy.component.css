@@ -67,7 +67,7 @@
 
 #price{
     text-transform: capitalize;
-    color: var(--mainColor);
+    color: var(--secondColor);
     width: 100%;
     font-size: 24px;
     font-weight: 600;

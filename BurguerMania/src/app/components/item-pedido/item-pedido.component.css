@@ -1,0 +1,121 @@
+.box {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.pedido{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: var(--greyBorder);
+}
+
+.image{
+    width: 160px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.image > img{
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+#title {
+    text-transform: capitalize;
+    color: var(--mainColor);
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font);
+}
+
+
+#price{
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: var(--secondColor);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font);
+    margin-bottom: 10px;
+}
+
+.sobre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#qtd {
+    color: var(--greyColor);
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+.button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.button > a {
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 25px 10px 25px;
+    outline: var(--buttonBorder);
+    text-decoration: none;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+.buttonColored {
+    text-align: center;
+    width: 100%;
+    background-color: var(--secondColor);
+    color: var(--whiteColor) !important;
+    transition: 0.2s;
+}
+
+.buttonColored:hover{
+    opacity: 90%;
+    transition: 0.2s;  
+}
+
+.trash{
+    outline: none !important;
+}
+
+.button > a > svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--secondColor);
+}
+
+.totalprice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price{
+    margin-top: 30px;
+    text-transform: capitalize;
+    color: var(--greyColor);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font);
+    margin-bottom: 10px;
+}
