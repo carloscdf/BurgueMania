@@ -41,7 +41,9 @@
 }
 
 @media (max-width: 630px){
-
+    .about{
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 440px){

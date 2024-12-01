@@ -24,3 +24,21 @@ button{
     font-family: var(--font);
     color: var(--mainColor);
 }
+
+@media(max-width: 541px){
+
+}
+
+@media(max-width: 390px){
+    button{
+        font-size: 20px;
+    }
+    
+    .value{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 370px){
+
+}
