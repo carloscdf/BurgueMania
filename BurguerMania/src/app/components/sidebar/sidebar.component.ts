@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
+  @Input() isVisible!:string;
+  @Output() isVisibleUptade = new EventEmitter<string>();
 
+  isSidebarVisible(){
+    if(this.isVisible === 'block'){
+      this.isVisible = 'none';
+      this.isVisibleUptade.emit(this.isVisible);
+    } else{
+      this.isVisible = 'block';
+      this.isVisibleUptade.emit(this.isVisible);
+    }
+  }
 }

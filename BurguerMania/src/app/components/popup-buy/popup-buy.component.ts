@@ -32,8 +32,6 @@ export class PopupBuyComponent {
     }
   }
 
-
-
   newQuantity(quantity:number):void{
     this.quantity = quantity;
     this.itemTotalPrice();
