@@ -1,13 +1,12 @@
 <div class="box" [style.display]="popupVisibility">
 <div class="popup">
     <div class="image">
-        <img [src]="burguer.img" [alt]="burguer.nome">
+        <img [src]="burguer.imagem" [alt]="burguer.nome">
     </div>
     <div class="about">
         <div class="infos">
-        <p id="tipo">{{burguer.tipo}}</p>
         <p id="title">{{burguer.nome}}</p>
-        <p id="desc">{{burguer.desc}}</p>
+        <p id="desc">{{burguer.baseDesc}}</p>
         <p id="price">{{burguer.preco | currency: 'BRL':'symbol'}}</p>
      </div>
         <div class="buy">

@@ -6,7 +6,7 @@ import { Burguer } from '../interfaces/burguer';
   providedIn: 'root'
 })
 export class BurguersService {
-  url = 'http://localhost:3000/Burguers';
+  url = 'http://localhost:5157/api/Produtos';
 
   constructor() { }
   async getAllBurguers(): Promise<Burguer[]> {
@@ -22,18 +22,11 @@ export class BurguersService {
     }
   }
 
-  async getBurguersByType(tipo: string): Promise<Burguer[]> {
-    try {
-      const data = await fetch(`${this.url}?tipo=${tipo}`);
-      if (!data.ok) {
-        throw new Error(`Erro na requisição: ${data.status}`);
-      }
-      return data.json();
-    } catch (error) {
-      console.error('Erro ao buscar hambúrgueres por tipo:', error);
-      return []; // Retorna uma lista vazia em caso de erro
-    }
+  async getBurguersByCategoria(categoriaId: number): Promise<Burguer[]> {
+    const allBurguers = await this.getAllBurguers(); // Supondo que você tenha um método que busca todos os hambúrgueres
+    return allBurguers.filter(burguer => burguer.categoriaId === categoriaId);
   }
+  
 
   async getBurguerById(id: number): Promise<Burguer | undefined> {
     try {

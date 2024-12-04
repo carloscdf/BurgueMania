@@ -1,6 +1,4 @@
-
-
-.categories{
+.categories {
     width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -10,7 +8,7 @@
     justify-content: center;
 }
 
-.categorie{
+.categorie {
     text-decoration: none;
     padding: 10px;
     display: flex;
@@ -20,11 +18,11 @@
     cursor: pointer;
 }
 
-.categorie:hover{
+.categorie:hover {
     outline: var(--cardBorder);
 }
 
-.categorie > img{
+.categorie>img {
     display: flex;
     width: 293.33px;
     height: 200px;
@@ -54,50 +52,53 @@
 
 /*Media queries*/
 @media (max-width: 1020px) {
-    .categories{
+    .categories {
         width: 90%;
         grid-template-columns: repeat(auto-fit, 294px);
         gap: 10px;
     }
-    
-}
-
-@media (max-width: 830px) {
 
 }
 
-@media (max-width: 670px){
-    .categories{
+@media (max-width: 830px) {}
+
+@media (max-width: 670px) {
+    .categories {
         width: 90%;
         grid-template-columns: repeat(auto-fit, 194px);
         gap: 50px;
     }
 
-    .categorie:hover{
+    .categorie:hover {
         outline: none;
     }
 
-    .categorie > img{
+    .categorie>img {
         width: 230px;
         height: 170px;
     }
+
+
+    #desc {
+        font-size: 16px;
+    }
 }
 
-@media(max-width: 487px){
-    .categorie > img{
-        width: 290;
+@media(max-width: 487px) {
+    .categorie>img {
+        width: 290px;
         height: 200px;
     }
 
-    .categories{
+    .categories {
         gap: 30px;
     }
 }
 
-@media(max-width: 390px){
-
+@media(max-width: 390px) {
+    .categories {
+        gap: 0px;
+    }
 }
 
-@media (max-width: 340px){
-   
-}
+@media (max-width: 340px) {}

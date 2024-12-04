@@ -16,6 +16,9 @@
     width: 160px;
     height: 120px;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image > img{
@@ -94,7 +97,4 @@
 }
 
 @media(max-width: 390px){
-    .pedido{
-        flex-direction: column;
-    }
 }

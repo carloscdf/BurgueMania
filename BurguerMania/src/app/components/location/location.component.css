@@ -48,7 +48,10 @@
 }
 
 @media (max-width: 630px){
-
+    .location > iframe:hover{
+        outline: none;
+    }
+    
 }
 
 @media(max-width: 440px){

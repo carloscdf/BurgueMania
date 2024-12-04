@@ -5,7 +5,7 @@ import { Categories } from '../interfaces/categories';
   providedIn: 'root'
 })
 export class CategoriesService {
-  url = 'http://localhost:3000/Categories';
+  url = 'http://localhost:5157/api/Categorias';
   constructor() { }
   async getAllCategories(): Promise<Categories[]>{
     const data = await fetch(this.url); //faz uma requisição fetch para a url especificada

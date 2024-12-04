@@ -1,9 +1,9 @@
 <app-title [title]="title"></app-title>
 @if(burguersList !== undefined && burguersList.length > 0){
-    <app-menu [showAll]="showAll" [burguersList]="burguersList"></app-menu>
+    <app-menu [showAll]="showAll" [burguersList]="burguersList" [categoriesList]="categoriesList"></app-menu>
     <app-button [showAll]="showAll" (click)="toggleShowAll()"></app-button>    
 } @else {
-    <p id="alert">Produtos não encontrados</p>
+    <p id="alert">Produtos não encontrados.</p>
 }
 
 

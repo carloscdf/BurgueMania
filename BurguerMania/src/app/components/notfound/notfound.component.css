@@ -1,0 +1,15 @@
+
+#alert{
+    font-family: var(--font);
+    text-align: center;
+    font-size: 18px;
+    color: var(--mainColor);
+}
+
+#signal404{
+    font-family: var(--font);
+    text-align: center;
+    font-size: 48px;
+    color: var(--secondColor);
+    margin: 30px 0px 30px 0px;
+}

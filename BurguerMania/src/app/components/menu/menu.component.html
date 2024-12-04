@@ -1,11 +1,11 @@
 <div class="menu">
-      @for(burguer of showAll === false ? burguersList.slice(0, 3) : burguersList; track burguer.id;){
-        <a [routerLink]="['/categories/', burguer.tipo, burguer.id]" class="item">
-            <img [src]="burguer.img" alt="">
-            <p id="tipo">{{burguer.tipo}}</p>
-            <p id="title">{{burguer.nome}}</p>
-            <p id="desc">{{burguer.desc}}</p>
-            <p id="price">{{burguer.preco | currency: 'BRL':'symbol'}}</p>
-        </a> 
-      } 
+  <a *ngFor="let burguer of (showAll ? burguersList : burguersList.slice(0, 3)); trackBy: trackById" 
+     [routerLink]="['/categories/', burguer.categoriaId, burguer.id]" 
+     class="item">
+    <img [src]="burguer.imagem" alt="Imagem do {{ burguer.nome }}">
+    <p id="tipo">{{ getCategoryName(burguer.categoriaId) }}</p>
+    <p id="title">{{ burguer.nome }}</p>
+    <p id="desc">{{ burguer.baseDesc }}</p>
+    <p id="price">{{ burguer.preco | currency: 'BRL':'symbol' }}</p>
+  </a>
 </div>

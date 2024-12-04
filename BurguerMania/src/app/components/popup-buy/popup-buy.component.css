@@ -154,8 +154,12 @@ app-buy-button {
     }
 
     app-stepper{
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #desc{
+        font-size: 14px;
     }
 }
 

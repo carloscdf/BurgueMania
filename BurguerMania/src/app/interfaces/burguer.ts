@@ -1,9 +1,9 @@
 export interface Burguer {
     id: number;
     nome: string;
-    desc: string;
-    sobre:string;
+    baseDesc: string;
+    fullDesc: string;
     preco: number;
-    tipo: string;
-    img: string;
+    imagem: string;
+    categoriaId: number;
 }
