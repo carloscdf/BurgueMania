@@ -25,6 +25,7 @@ export class DetailsComponent {
   burguerService: BurguersService = inject(BurguersService);
 
   constructor(){
+    
     const id = Number(this.route.snapshot.params['id']);
         // chamando o método para buscar o hamburguer do serviço
         this.burguerService.getBurguerById(id).then((burguer) => {

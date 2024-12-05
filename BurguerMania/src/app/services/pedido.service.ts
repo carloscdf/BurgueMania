@@ -1,75 +1,77 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { forkJoin, map, Observable, switchMap } from 'rxjs';
 import { Pedidos } from '../interfaces/pedidos';
-import { ProdutosPedido } from '../interfaces/produtos-pedido';
-import { PedidosUsuario } from '../interfaces/pedidos-usuario';
+import { response } from 'express';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class PedidoService {
-  private apiUrl: string = 'http://seu-backend-api'; // URL do seu backend
+  pedidosUrl: string = 'http://localhost:5157/api/Pedidos';
+  pedidoUsuarioUrl: string = 'http://localhost:5157/api/PedidosUsuario';
+  produtoPedidoUrl: string = 'http://localhost:5157/api/ProdutosPedido';
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   // Método para criar um pedido
-  criarPedido(usuarioId: number, produtos: number[]): Observable<Pedidos> {
-    const pedidoData: Pedidos = {
-      valor: 0, // O valor pode ser calculado depois
-      statusId: 1,
-      id: 0
-    };
+  async postPedido(valor: number, produtoId: number): Promise<Pedidos | undefined> {
+    const response = await fetch(this.pedidosUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        valor: valor,
+        statusId: 1,
+      }),
+    });
 
-    return this.http.post<Pedidos>(`${this.apiUrl}/pedidos`, pedidoData).pipe(
-      // Após criar o pedido, criar o relacionamento PedidoUsuario e ProdutoPedido
-      switchMap((pedido) => {
-        // Criar o relacionamento PedidoUsuario
-        const pedidoUsuarioData: PedidosUsuario = {
-          usuarioId: usuarioId,
-          pedidoId: pedido.id,
-        };
+    if (!response.ok) {
+      console.error('Erro ao postar pedido:', response.status, response.statusText);
+      return undefined;
+    }
 
-        // Criar o relacionamento PedidoUsuario
-        this.criarPedidoUsuario(pedidoUsuarioData);
+    const pedidoCriado: Pedidos = await response.json();
 
-        // Criar o relacionamento ProdutoPedido para cada produto
-        const produtoPedidoRequests: Observable<ProdutosPedido>[] = produtos.map(
-          (produtoId) => {
-            const produtoPedidoData: ProdutosPedido = {
-              produtoId: produtoId,
-              pedidoId: pedido.id,
-            };
-            return this.criarProdutoPedido(produtoPedidoData);
-          }
-        );
+    // Chama as funções para relacionar Pedido com Produto e Usuário
+    await this.postPedidoUsuario(pedidoCriado.id);
+    await this.postProdutoPedido(produtoId, pedidoCriado.id);
 
-        // Executar as requisições ProdutoPedido
-        return forkJoin(produtoPedidoRequests).pipe(
-          map(() => pedido) // Retornar o pedido após os relacionamentos serem criados
-        );
-      })
-    );
+    return pedidoCriado;
   }
 
-  // Criar relacionamento PedidoUsuario
-  private criarPedidoUsuario(data: PedidosUsuario): Observable<PedidosUsuario> {
-    return this.http.post<PedidosUsuario>(
-      `${this.apiUrl}/pedido-usuario`,
-      data
-    );
+  // Método para criar PedidoUsuario
+  private async postPedidoUsuario(pedidoId: number): Promise<void> {
+    const response = await fetch(this.pedidoUsuarioUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        usuarioId: 1, // ID do usuário fixo como 1
+        pedidoId: pedidoId,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error('Erro ao associar Pedido com Usuário:', response.status, response.statusText);
+    }
   }
 
-  // Criar relacionamento ProdutoPedido
-  private criarProdutoPedido(data: ProdutosPedido): Observable<ProdutosPedido> {
-    return this.http.post<ProdutosPedido>(
-      `${this.apiUrl}/produto-pedido`,
-      data
-    );
-  }
+  // Método para criar ProdutoPedido
+  private async postProdutoPedido(produtoId: number, pedidoId: number): Promise<void> {
+    const response = await fetch(this.produtoPedidoUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        produtoId: produtoId,
+        pedidoId: pedidoId,
+      }),
+    });
 
-  // Método para atualizar o valor do pedido após adicionar os produtos
-  atualizarValorPedido(pedidoId: number, valor: number): Observable<Pedidos> {
-    return this.http.put<Pedidos>(`${this.apiUrl}/pedidos/${pedidoId}`, { valor });
+    if (!response.ok) {
+      console.error('Erro ao associar Produto com Pedido:', response.status, response.statusText);
+    }
   }
 }

@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './buy-final-stepper.component.css'
 })
 export class BuyFinalStepperComponent {
-  @Input() totalPrice!:string;
+  @Input() totalPrice!:string;  
 }

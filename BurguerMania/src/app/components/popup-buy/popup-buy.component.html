@@ -11,7 +11,7 @@
      </div>
         <div class="buy">
             <app-stepper (quantityValue)="newQuantity($event)"></app-stepper>
-            <app-buy-final-stepper  [totalPrice]="totalPrice"></app-buy-final-stepper>
+            <app-buy-final-stepper  [totalPrice]="totalPrice" (click)="postPedido(); isPopupVisible()" ></app-buy-final-stepper>
         </div>
     </div>
     <div class="close" (click)="isPopupVisible()">

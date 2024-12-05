@@ -36,6 +36,7 @@
     justify-content: center;
 }
 
+
 /*Media queries*/
 @media (max-width: 1020px) {
     .banner{
