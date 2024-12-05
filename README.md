@@ -12,8 +12,13 @@ Terceiro: execute o `ng serve` para inciar o servidor do angular.
 ### Fluxo
 
 1- Clique em fazer pedido
+
 2- Clique na categoria
+
 3- Clique no produto da categoria
+
 4- Clique em comprar
+
 5- Defina a quantidade que você deseja 
+
 6- Finaliza a compra, o pedido será salvo automaticamente no banco de dados
